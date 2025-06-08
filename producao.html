@@ -1,11 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    producao
+    <!--Apresentação do tema-->
+    <section class="cabecalho">
+        <h1>AGRINHO 2025</h1>
+        <h3>Festejando Conexão Campo Cidade</h3>
+    </section>
+
+    <!--cabeçalho do site-->
+    <nav class="navbar navbar-expand-lg bg-primary">
+        <div class="container-fluid ">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="index.html">Página Inicial |</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="energia.html">Energia Rural |</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="agua.html">Acessibilidade a Água |</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="producao.html">Produção</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <audio id="somClick" src="tizatto (online-audio-converter.com).mp3" preload="auto"></audio>
+
+  <script>
+    const som = document.getElementById("somClick");
+
+    document.addEventListener("click", () => {
+      som.pause();
+      som.currentTime = 0;
+      som.playbackRate = 2; // <-- aqui aumenta a velocidade
+      som.play().catch((e) => {
+        console.log("Erro ao tocar o som:", e);
+      });
+    });
+  </script>
+
+<section class="container my-5">
+  <div class="row align-items-center">
+    <div class="col-md-6">
+      <h1>Produção no Meio Rural</h1>
+
+<p>A produção agrícola e pecuária no meio rural é fundamental para o desenvolvimento econômico e social de muitas regiões. A diversidade de culturas, incluindo grãos, frutas, hortaliças e criação de animais, exige manejo adequado do solo e uso eficiente dos recursos naturais.</p>
+
+<p>A adoção de tecnologias modernas, como máquinas agrícolas, fertilizantes orgânicos e sistemas de irrigação de precisão, tem aumentado a produtividade e a sustentabilidade das atividades rurais. A integração entre agricultura e pecuária também contribui para o ciclo sustentável dos nutrientes no solo, melhorando a fertilidade.</p>
+
+<p>Além disso, a diversificação da produção ajuda a reduzir riscos climáticos e ampliar oportunidades de mercado para os produtores. Práticas como culturas rotativas e sistemas agroecológicos promovem a saúde dos ecossistemas agrícolas.</p>
+
+<p>Investir na capacitação dos produtores e em políticas públicas que incentivem práticas sustentáveis, acesso a crédito e assistência técnica é essencial para fortalecer a produção no campo e o desenvolvimento regional.</p>
+
+<p>Quando bem gerida, a produção rural garante segurança alimentar, gera emprego e renda, e contribui para o equilíbrio entre produtividade e conservação ambiental, sendo um pilar importante para a sustentabilidade do país.</p>
+
+    </div>
+    <div class="col-md-6">
+      <img src="assets/image/producao.png.jpeg" alt="Produção agrícola" class="img-fluid rounded">
+    </div>
+  </div>
+</section>
+
+<div style="width: 600px; height: 400px; margin: 20px auto;">
+  <h3>Produção Agrícola (toneladas) - 2025</h3>
+  <canvas id="agriChart" style="max-width: 100%; max-height: 100%;"></canvas>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  const ctx = document.getElementById('agriChart').getContext('2d');
+  const agriChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['Milho', 'Soja', 'Trigo', 'Arroz', 'Feijão', 'Cana-de-açúcar'],
+      datasets: [{
+        label: 'Produção (t)',
+        data: [3500, 4200, 2800, 2200, 1500, 5000],
+        backgroundColor: 'rgba(54, 162, 235, 0.8)',
+        borderColor: 'rgba(54, 162, 235, 1)',
+        borderWidth: 1,
+        borderRadius: 4
+      }]
+    },
+    options: {
+      scales: {
+        y: { beginAtZero: true },
+      },
+      plugins: { legend: { display: true } },
+      responsive: true,
+      maintainAspectRatio: false
+    }
+  });
+</script>
+
+<style>
+  .comparison-table {
+    display: flex;
+    gap: 20px;
+    max-width: 900px;
+    margin: 40px auto;
+    border: 2px solid #3696eb;
+    border-radius: 8px;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+  }
+
+  .comparison-column {
+    flex: 1;
+    padding: 20px;
+    background-color: #f0f8ff;
+  }
+
+  .comparison-column:nth-child(odd) {
+    background-color: #e6f0ff;
+  }
+
+  .comparison-column h3 {
+    color: #054a91;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #3696eb;
+    padding-bottom: 8px;
+  }
+
+  .comparison-column p {
+    line-height: 1.6;
+    color: #333;
+  }
+</style>
+<div style="height: 50px;"></div>
+
+<div style="max-width: 1100px; margin: 0 auto; padding: 20px;">
+  <h1>A Evolução da Produção Agrícola: Inovação e Eficiência</h1>
+  <p>
+    A produção agrícola tem passado por transformações significativas nas últimas décadas, impulsionada por avanços tecnológicos e práticas inovadoras que visam aumentar a eficiência e a sustentabilidade. Hoje, técnicas como a agricultura de precisão, o uso de drones para monitoramento das lavouras e sistemas automatizados de irrigação permitem aos produtores otimizar recursos e maximizar os rendimentos.
+  </p>
+  <p>
+    Além disso, a diversificação das culturas e o manejo integrado de pragas contribuem para a saúde do solo e para a produção de alimentos mais saudáveis e em maior quantidade. A mecanização e a utilização de insumos de qualidade também desempenham papel importante na redução do esforço físico e no aumento da produtividade.
+  </p>
+  <p>
+    O crescimento da demanda global por alimentos torna essencial o investimento contínuo em pesquisa, capacitação técnica e infraestrutura. A produção agrícola eficiente não só garante a segurança alimentar, mas também fomenta o desenvolvimento econômico das regiões rurais, gerando emprego e renda.
+  </p>
+  <p>
+    Com um olhar voltado para o futuro, a produção agrícola sustentável representa um equilíbrio entre tecnologia, respeito ao meio ambiente e valorização do trabalho do produtor rural, assegurando a continuidade das atividades produtivas para as próximas gerações.
+  </p>
+</div>
+
+
+<div class="comparison-table">
+  <div class="comparison-column">
+    <h3>Produção no Campo</h3>
+    <p>
+      A produção agrícola no campo utiliza extensas áreas rurais, favorecendo o cultivo em larga escala e o uso de técnicas tradicionais e modernas para maximizar a produtividade. O contato direto com o solo e o clima natural permite o cultivo de diversas culturas, que podem variar conforme as estações e a região. 
+    </p>
+    <p>
+      Além disso, o campo oferece espaço para criação de gado e produção integrada, contribuindo para a sustentabilidade e a diversificação das atividades. A proximidade com recursos naturais facilita a irrigação e o manejo do solo, embora dependa de infraestrutura adequada para evitar perdas e desperdícios.
+    </p>
+  </div>
+
+  <div class="comparison-column">
+    <h3>Produção na Cidade</h3>
+    <p>
+      A produção na cidade, principalmente por meio da agricultura urbana e hortas comunitárias, foca na otimização de pequenos espaços com técnicas inovadoras, como a hidroponia, aquaponia e cultivo vertical. Embora limitada em escala, essa produção oferece alimentos frescos próximos aos consumidores, reduzindo a pegada ambiental.
+    </p>
+    <p>
+      O cultivo urbano incentiva a sustentabilidade local, promove a educação ambiental e melhora a qualidade de vida nas cidades. A produção na cidade é uma resposta à crescente demanda por alimentos orgânicos e locais, enfrentando desafios como o acesso à água, solo adequado e poluição.
+    </p>
+  </div>
+</div>
+
+<section style="max-width: 900px; margin: 40px auto; padding: 0 20px;">
+  <h2>Perguntas Frequentes</h2>
+
+  <div class="faq-item" style="margin-bottom: 15px; border-bottom: 1px solid #ccc; padding-bottom: 10px;">
+    <button class="faq-question" style="background: none; border: none; width: 100%; text-align: left; font-size: 1.1rem; cursor: pointer; padding: 10px 0; display: flex; justify-content: space-between; align-items: center;">
+      O que é agricultura sustentável?
+      <span class="faq-toggle">+</span>
+    </button>
+    <div class="faq-answer" style="display: none; padding-left: 10px; color: #444;">
+      A agricultura sustentável é um conjunto de práticas que visam produzir alimentos respeitando o meio ambiente, conservando os recursos naturais e promovendo o bem-estar social e econômico das comunidades rurais.
+    </div>
+  </div>
+
+  <div class="faq-item" style="margin-bottom: 15px; border-bottom: 1px solid #ccc; padding-bottom: 10px;">
+    <button class="faq-question" style="background: none; border: none; width: 100%; text-align: left; font-size: 1.1rem; cursor: pointer; padding: 10px 0; display: flex; justify-content: space-between; align-items: center;">
+      Quais são os benefícios da irrigação eficiente no campo?
+      <span class="faq-toggle">+</span>
+    </button>
+    <div class="faq-answer" style="display: none; padding-left: 10px; color: #444;">
+      A irrigação eficiente reduz o consumo de água, aumenta a produtividade das culturas, previne o desperdício e contribui para a conservação dos recursos hídricos, promovendo a sustentabilidade no meio rural.
+    </div>
+  </div>
+
+  <div class="faq-item" style="margin-bottom: 15px; border-bottom: 1px solid #ccc; padding-bottom: 10px;">
+    <button class="faq-question" style="background: none; border: none; width: 100%; text-align: left; font-size: 1.1rem; cursor: pointer; padding: 10px 0; display: flex; justify-content: space-between; align-items: center;">
+      Como a tecnologia tem ajudado a produção agrícola?
+      <span class="faq-toggle">+</span>
+    </button>
+    <div class="faq-answer" style="display: none; padding-left: 10px; color: #444;">
+      A tecnologia, como sensores, drones, sistemas de irrigação automatizados e análise de dados, permite o monitoramento preciso das plantações, otimização dos recursos e aumento da eficiência produtiva.
+    </div>
+  </div>
+</section>
+
+<script>
+  document.querySelectorAll('.faq-question').forEach(button => {
+    button.addEventListener('click', () => {
+      const answer = button.nextElementSibling;
+      const toggle = button.querySelector('.faq-toggle');
+      const isVisible = answer.style.display === 'block';
+      if (isVisible) {
+        answer.style.display = 'none';
+        toggle.textContent = '+';
+      } else {
+        answer.style.display = 'block';
+        toggle.textContent = '−';
+      }
+    });
+  });
+</script>
+
+
+<div style="text-align: center; background-color: white; color: black; padding: 20px; font-family: Arial, sans-serif;">
+  <p><strong>Produção no Meio Rural</strong><br>
+  Fonte: Empresa Brasileira de Pesquisa Agropecuária (EMBRAPA)<br>
+  <a href="https://www.embrapa.br/" target="_blank" style="color: purple; text-decoration: none;">
+    https://www.embrapa.br/
+  </a></p>
+</div>
+
+      <footer class="footer bg-primary text-white text-center py-3">
+    <p>Todos os direitos reservados para agrinho 2025 - Festejando a conexão campo cidade.</p>
+</footer>
+    
 </body>
+
 </html>

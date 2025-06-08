@@ -1,11 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+
+        <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    energia
+    <!--Apresentação do tema-->
+    <section class="cabecalho">
+        <h1>AGRINHO 2025</h1>
+        <h3>Festejando Conexão Campo Cidade</h3>
+    </section>
+
+    <!--cabeçalho do site-->
+    <nav class="navbar navbar-expand-lg bg-primary">
+        <div class="container-fluid ">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="index.html">Página Inicial |</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="energia.html">Energia Rural |</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="agua.html">Acessibilidade a Água |</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="producao.html">Produção</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <audio id="somClick" src="tizatto (online-audio-converter.com).mp3" preload="auto"></audio>
+
+  <script>
+    const som = document.getElementById("somClick");
+
+    document.addEventListener("click", () => {
+      som.pause();
+      som.currentTime = 0;
+      som.playbackRate = 2; // <-- aqui aumenta a velocidade
+      som.play().catch((e) => {
+        console.log("Erro ao tocar o som:", e);
+      });
+    });
+  </script>
+
+<section class="container my-5">
+ <h1>A Importância da Energia no Meio Rural</h1>
+<p>A energia é um recurso fundamental para o desenvolvimento e a sustentabilidade do meio rural. Sua disponibilidade garante o funcionamento das atividades agrícolas, a operação de equipamentos, a iluminação das comunidades e o abastecimento de residências, sendo indispensável para o progresso no campo.</p>
+<p>No ambiente rural, o uso consciente e a gestão eficiente da energia são essenciais para evitar desperdícios e reduzir custos. Tecnologias como a energia solar, eólica e a biomassa oferecem alternativas renováveis que contribuem para a diversificação da matriz energética e para a independência energética das propriedades rurais.</p>
+<p>Além disso, o acesso à energia limpa está diretamente ligado à melhoria da qualidade de vida das famílias rurais, à mecanização da produção e à sustentabilidade ambiental. Investir em fontes renováveis ajuda a preservar o meio ambiente, reduzir a emissão de gases poluentes e fortalecer a economia local.</p>
+<p>Promover a infraestrutura adequada, capacitação técnica e políticas públicas voltadas para a energia no meio rural é um passo fundamental para garantir o crescimento sustentável e a competitividade do setor agrícola, assegurando um futuro mais próspero para as comunidades do campo.</p>
+
+</section>
+
+<div class="container mt-5">
+  <h2>Tabela Informativa sobre Energia no Meio Rural</h2>
+  <table class="table table-bordered table-striped mt-3">
+    <thead class="table-dark">
+      <tr>
+        <th>Fonte de Energia</th>
+        <th>Descrição</th>
+        <th>Vantagens</th>
+        <th>Aplicações no Meio Rural</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Energia Solar</td>
+        <td>Energia obtida por meio da conversão da luz solar em eletricidade usando painéis fotovoltaicos.</td>
+        <td>Renovável, limpa, reduz custos a longo prazo, fácil instalação.</td>
+        <td>Iluminação de propriedades, bombeamento de água, eletrificação de áreas isoladas.</td>
+      </tr>
+      <tr>
+        <td>Energia Eólica</td>
+        <td>Energia gerada pela força dos ventos, captada por turbinas eólicas.</td>
+        <td>Fonte limpa, renovável, baixo impacto ambiental.</td>
+        <td>Geração de eletricidade para propriedades rurais, apoio à irrigação e sistemas de refrigeração.</td>
+      </tr>
+      <tr>
+        <td>Biomassa</td>
+        <td>Energia proveniente da queima ou decomposição de resíduos orgânicos, como restos agrícolas e esterco.</td>
+        <td>Aproveitamento de resíduos, redução de poluição, fonte renovável.</td>
+        <td>Produção de biogás, aquecimento, geração de eletricidade.</td>
+      </tr>
+      <tr>
+        <td>Energia Hidrelétrica</td>
+        <td>Energia gerada pelo movimento da água em rios ou reservatórios, convertida em eletricidade.</td>
+        <td>Fonte limpa, confiável, alta eficiência.</td>
+        <td>Pequenas centrais hidrelétricas para comunidades rurais e propriedades agrícolas.</td>
+      </tr>
+      <tr>
+        <td>Energia Geotérmica</td>
+        <td>Energia obtida do calor interno da Terra para geração de eletricidade e aquecimento.</td>
+        <td>Constante, renovável, baixo impacto ambiental.</td>
+        <td>Aquecimento de estufas, criação de animais, geração local de eletricidade.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="container my-5">
+  <div class="row g-4 align-items-center">
+    <div class="col-md-6">
+      <img src="assets/image/energia1.png.jpeg" alt="Descrição da imagem" class="img-fluid rounded w-100">
+    </div>
+    <div class="col-md-6">
+      <h1>Desafios e Inovações na Energia Rural</h1>
+
+<p>O acesso à energia no meio rural ainda é limitado em muitas regiões, especialmente onde a infraestrutura elétrica é escassa ou cara. Diante disso, soluções descentralizadas com fontes renováveis, como solar e eólica, ganham espaço por oferecerem autonomia e sustentabilidade para comunidades isoladas.</p>
+
+<p>Sistemas off-grid têm sido implantados com sucesso em pequenas propriedades, fornecendo energia para irrigação, refrigeração, comunicação e outras atividades essenciais. No entanto, desafios como o armazenamento eficiente e a intermitência da geração exigem soluções híbridas e mais robustas.</p>
+
+<p>Esses modelos, que combinam fontes renováveis com geradores de backup, aumentam a confiabilidade, mas também exigem maior investimento e conhecimento técnico. Por isso, capacitação local e apoio governamental são fundamentais para garantir a adoção e manutenção dessas tecnologias.</p>
+
+<p>Além da geração, o uso de tecnologias digitais para monitoramento e controle tem permitido mais eficiência e autonomia energética no campo. Combinando inovação, políticas públicas e participação comunitária, a energia rural pode se tornar um motor de desenvolvimento econômico e social sustentável.</p>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="container mt-5">
+  <h3>Informações sobre Energia no Meio Rural</h3>
+  <div class="row mt-3">
+    <!-- Card 1 -->
+    <div class="col-md-4 mb-4">
+      <div class="card" style="cursor:pointer;" data-bs-toggle="modal" data-bs-target="#modalSolar">
+        <img src="assets/image/energia2.png.jpeg" class="card-img-top" alt="Energia Solar" />
+        <div class="card-body">
+          <h5 class="card-title">Energia Solar</h5>
+          <p class="card-text"><p>Fonte renovável que utiliza a luz do sol para gerar eletricidade no campo, contribuindo para a redução de custos energéticos e promovendo a sustentabilidade nas atividades rurais.</p>
+</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-md-4 mb-4">
+      <div class="card" style="cursor:pointer;" data-bs-toggle="modal" data-bs-target="#modalEolica">
+        <img src="assets/image/energia4.png.jpeg" class="card-img-top" alt="Energia Eólica" />
+        <div class="card-body">
+          <h5 class="card-title">Energia Eólica</h5>
+          <p class="card-text"><p>Geração de energia elétrica a partir da força dos ventos, oferecendo uma alternativa limpa e sustentável para o abastecimento energético, especialmente em áreas rurais e abertas.</p>
+</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col-md-4 mb-4">
+      <div class="card" style="cursor:pointer;" data-bs-toggle="modal" data-bs-target="#modalBiomassa">
+        <img src="assets/image/energia3.png.jpeg" class="card-img-top" alt="Biomassa" />
+        <div class="card-body">
+          <h5 class="card-title">Energia Hidrelétrica</h5>
+          <p class="card-text"> <p>Geração de energia elétrica aproveitando a força da água em movimento, uma fonte limpa e renovável que contribui para o abastecimento sustentável, especialmente em regiões próximas a rios e lagos.</p>
+</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modais -->
+
+<!-- Modal Energia Solar -->
+<div class="modal fade" id="modalSolar" tabindex="-1" aria-labelledby="modalSolarLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalSolarLabel">Energia Solar</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        <p>A energia solar é uma das fontes renováveis mais acessíveis e limpas para o meio rural. Painéis fotovoltaicos convertem a luz do sol diretamente em eletricidade, permitindo autonomia e redução de custos para propriedades rurais.</p>
+        <p>Ela pode ser usada para iluminar casas, alimentar bombas de irrigação e equipamentos agrícolas, promovendo um desenvolvimento sustentável e econômico para as comunidades no campo.</p>
+        <p>Além disso, a energia solar reduz a dependência de combustíveis fósseis, diminuindo a emissão de gases poluentes e ajudando na preservação ambiental.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Voltar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Energia Eólica -->
+<div class="modal fade" id="modalEolica" tabindex="-1" aria-labelledby="modalEolicaLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalEolicaLabel">Energia Eólica</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        <p>A energia eólica aproveita a força dos ventos para gerar eletricidade, utilizando turbinas instaladas em áreas rurais com bom potencial eólico. É uma fonte limpa, renovável e sustentável.</p>
+        <p>Ela contribui para diversificar a matriz energética local e pode suprir necessidades de energia em propriedades agrícolas, incluindo irrigação, armazenamento e outras operações que dependem de eletricidade confiável.</p>
+        <p>Além disso, a energia eólica ajuda a reduzir a emissão de gases de efeito estufa e incentiva a economia verde no meio rural.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Voltar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Energia Hidrelétrica -->
+<div class="modal fade" id="modalBiomassa" tabindex="-1" aria-labelledby="modalBiomassaLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalBiomassaLabel">Energia Hidrelétrica</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+       <p>A energia hidrelétrica é gerada a partir do aproveitamento da força da água em movimento, como rios e quedas d’água, para produzir eletricidade de forma limpa e renovável.</p>
+<p>Essa fonte contribui para o abastecimento sustentável, utilizando um recurso natural abundante no campo, sem emitir gases poluentes.</p>
+<p>Além disso, a energia hidrelétrica promove o desenvolvimento regional, gera emprego e impulsiona a infraestrutura nas comunidades rurais, fortalecendo a economia local.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Voltar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div style="text-align: center; background-color: white; color: black; padding: 20px; font-family: Arial, sans-serif;">
+  <p><strong>Energia no Meio Rural</strong><br>
+  Fonte: Ministério de Minas e Energia - Energia Rural<br>
+  <a href="https://www.gov.br/mme/pt-br/assuntos/energia" target="_blank" style="color: purple; text-decoration: none;">
+    https://www.gov.br/mme/pt-br/assuntos/energia
+  </a></p>
+</div>
+
+    <footer class="footer bg-primary text-white text-center py-3">
+    <p>Todos os direitos reservados para agrinho 2025 - Festejando a conexão campo cidade.</p>
+</footer>
+    
 </body>
+
 </html>

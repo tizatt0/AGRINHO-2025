@@ -1,11 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    agua
+    <!--Apresentação do tema-->
+    <section class="cabecalho">
+        <h1>AGRINHO 2025</h1>
+        <h3>Festejando Conexão Campo Cidade</h3>
+    </section>
+
+    <!--cabeçalho do site-->
+    <nav class="navbar navbar-expand-lg bg-primary">
+        <div class="container-fluid ">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="index.html">Página Inicial |</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="energia.html">Energia Rural |</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="agua.html">Acessibilidade a Água |</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="producao.html">Produção</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <audio id="somClick" src="tizatto (online-audio-converter.com).mp3" preload="auto"></audio>
+
+  <script>
+    const som = document.getElementById("somClick");
+
+    document.addEventListener("click", () => {
+      som.pause();
+      som.currentTime = 0;
+      som.playbackRate = 2; // <-- aqui aumenta a velocidade
+      som.play().catch((e) => {
+        console.log("Erro ao tocar o som:", e);
+      });
+    });
+  </script>
+
+<section class="container my-5">
+  <!-- Introdução -->
+  <h1>Importância da Água no Meio Rural</h1>
+<p>
+  A água é um dos recursos naturais mais valiosos para a vida no planeta, e sua presença é absolutamente essencial para o desenvolvimento sustentável das regiões rurais. No meio rural, a água não é apenas um insumo básico para o consumo humano, mas também um elemento fundamental para a produção agrícola, criação de animais e manutenção dos ecossistemas locais.
+</p>
+<p>
+  O uso eficiente e consciente da água no campo impacta diretamente a produtividade das lavouras e a qualidade de vida das comunidades rurais, que dependem desse recurso para suas atividades diárias e sua sobrevivência. A gestão responsável dos recursos hídricos permite preservar mananciais, garantir a disponibilidade para as futuras gerações e evitar a degradação ambiental.
+</p>
+<p>
+  Além disso, práticas inovadoras e tecnologias modernas, como sistemas de irrigação inteligente, captação de água da chuva e monitoramento do solo, têm revolucionado o modo como a água é utilizada no meio rural. Essas soluções promovem a otimização do uso, evitando desperdícios e assegurando que a água chegue exatamente onde e quando é necessária.
+</p>
+<p>
+  Investir em educação ambiental, políticas públicas eficazes e infraestrutura adequada para a gestão hídrica no campo é fundamental para assegurar que a água continue sendo um recurso renovável e disponível para todos, promovendo o equilíbrio entre desenvolvimento produtivo e preservação ambiental.
+</p>
+
+
+
+  <!-- Quadro da notícia -->
+  <div class="card border-primary shadow-sm my-4">
+    <div class="card-header bg-primary text-white">
+      <h5 class="mb-0">Notícia Real: Irrigação rural - Novas tecnologias otimizam o uso da água no campo</h5>
+    </div>
+    <div class="card-body">
+      <p>
+        Na Agrishow, feira de tecnologia agrícola realizada até o dia 2 em Ribeirão Preto (SP), inovações que reduzem significativamente o consumo de água sem perda de produtividade mostram que o setor está em transformação para otimizar ainda mais o uso de recursos hídricos. Sistemas inteligentes, automação e foco na capacitação técnica vêm mudando a forma como o produtor lida com a irrigação no campo.
+      </p>
+      <p><strong>Irrigação: produtividade com sustentabilidade</strong></p>
+      <p>
+        A legislação brasileira sobre o uso da água é uma das mais rígidas do mundo, e a irrigação tem se mostrado uma ferramenta eficiente para não só aumentar a produtividade, como também reduzir o consumo de recursos hídricos. O uso de sensores de umidade, automação via celular e inteligência artificial permite irrigar com precisão, reduzindo o desperdício de água em até 20% por safra.
+      </p>
+      <p>
+        Dentro desse contexto, uma das estratégias inovadoras é a irrigação localizada, que permite fornecer a quantidade exata de água que a planta precisa, com aplicação direta na raiz, além de benefícios extras.
+      </p>
+      <p>
+        Fonte: <a href="https://g1.globo.com/sp/ribeirao-preto-franca/agrishow/noticia/2025/05/04/irrigacao-rural-novas-tecnologias-buscam-otimizar-uso-de-agua-no-campo.ghtml" target="_blank" rel="noopener noreferrer">G1 - Irrigação rural: novas tecnologias buscam otimizar uso de água no campo</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="container my-5">
+  <h2>Pontos Importantes sobre a Água no Meio Rural</h2>
+  <ul>
+    <li>
+      <strong>Conservação dos Recursos Hídricos:</strong>  
+      A preservação de rios, nascentes e aquíferos é essencial para garantir o abastecimento contínuo de água no meio rural. A degradação dessas fontes por desmatamento, poluição ou uso inadequado pode comprometer não só a disponibilidade de água para o consumo humano e animal, mas também afetar a biodiversidade e o equilíbrio dos ecossistemas locais. Técnicas como o reflorestamento das margens e a proteção das áreas de recarga dos aquíferos são fundamentais para essa conservação.
+    </li>
+    <br>
+    <li>
+      <strong>Tecnologias de Irrigação Eficiente:</strong>  
+      O uso de sistemas modernos de irrigação, como o gotejamento e a microaspersão, permite aplicar a quantidade exata de água necessária para cada tipo de cultura, reduzindo desperdícios e aumentando a produtividade. Além disso, o monitoramento do solo com sensores inteligentes e o controle remoto da irrigação via aplicativos têm se tornado ferramentas essenciais para a agricultura de precisão, garantindo economia e sustentabilidade.
+    </li>
+    <br>
+    <li>
+      <strong>Reuso e Captação de Água:</strong>  
+      A captação de água da chuva e o reuso de águas residuais tratadas são práticas cada vez mais adotadas no meio rural para reduzir a dependência de fontes tradicionais. Esses métodos permitem armazenar água em períodos de chuva para uso posterior em irrigação e outras atividades, contribuindo para a segurança hídrica em épocas de seca e diminuindo o impacto ambiental.
+    </li>
+  </ul>
+</section>
+
+<section class="container my-5">
+  <div class="row align-items-center">
+    <div class="col-md-6">
+      <img src="assets/image/agua.png.jpeg" alt="Água no campo" class="img-fluid rounded">
+    </div>
+    <div class="col-md-6">
+      <h1>Água no Meio Rural</h1>
+
+<p>A água é um recurso essencial para a vida no campo, fundamental para a agricultura, pecuária e consumo das comunidades rurais. Ela é usada para irrigar plantações, alimentar animais e abastecer residências, sustentando o desenvolvimento das regiões.</p>
+
+<p>O uso sustentável e eficiente da água é vital para preservar os recursos hídricos e garantir a produtividade rural, evitando desperdícios que podem comprometer o meio ambiente e a segurança alimentar.</p>
+
+<p>Tecnologias modernas, como irrigação por gotejamento e sensores inteligentes, ajudam a otimizar o uso da água, ajustando a irrigação conforme a necessidade das culturas e reduzindo perdas.</p>
+
+<p>Práticas como captação de água da chuva, construção de barragens e conservação de nascentes também são importantes para garantir o abastecimento em períodos de seca.</p>
+
+<p>A conscientização das comunidades rurais sobre o uso responsável da água e a participação em projetos e políticas públicas são essenciais para promover a sustentabilidade e o desenvolvimento local.</p>
+
+<p>Esses esforços colaboram para a preservação dos ecossistemas e para a manutenção da qualidade de vida nas áreas rurais, fortalecendo a relação entre homem e natureza.</p>
+
+<p>Investir em acesso à água e tecnologias sustentáveis no campo é garantir um futuro melhor, preservando recursos e melhorando a qualidade de vida das populações rurais.</p>
+
+    </div>
+  </div>
+</section>
+
+<div style="text-align: center; background-color: white; color: black; padding: 20px; font-family: Arial, sans-serif;">
+  <p><strong>Importância da Água no Meio Rural</strong><br>
+  Fonte: Agência Nacional de Águas e Saneamento Básico (ANA)<br>
+  <a href="https://www.gov.br/ana/pt-br" target="_blank" style="color: purple; text-decoration: none;">
+    https://www.gov.br/ana/pt-br
+  </a></p>
+</div>
+
+      <footer class="footer bg-primary text-white text-center py-3">
+    <p>Todos os direitos reservados para agrinho 2025 - Festejando a conexão campo cidade.</p>
+</footer>
+    
 </body>
+
 </html>

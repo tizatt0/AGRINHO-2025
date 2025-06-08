@@ -18,7 +18,7 @@
     </section>
 
     <!--cabeçalho do site-->
-    <nav class="navbar navbar-expand-lg bg-success">
+    <nav class="navbar navbar-expand-lg bg-primary">
         <div class="container-fluid ">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,92 +43,249 @@
         </div>
     </nav>
 
-    <!-- Primeira seção a ser dividida-->
-    <div class="container">
-        <div class="row pt-5">
-            <div class="col ">
-                <div>
-                    <h2>O que podemos falar sobre a zona rural?</h2>
-                    <p class="alinha">Fica claro que, muitas vezes, a desinformação sobre os produtos gerados no campo
-                        impede que os
-                        moradores das cidades compreendam todo o valor e o esforço envolvidos na produção rural. Essa
-                        falta
-                        de conhecimento pode gerar preconceitos, desvalorização dos alimentos e até desperdício.
-                        Promover a
-                        conexão entre o campo e a cidade, por meio de campanhas educativas e feiras de produtores, é
-                        fundamental para valorizar o trabalho do agricultor e incentivar o consumo consciente.
-                    </p>
-                </div>
-            </div>
-            <div class="col text-center">
-                <div>
-                    <img class="img-agro br-3" src="./assets/image/agro.png" alt="Imagem representativa de plantação.">
-                </div>
-            </div>
-        </div>
-        <div class="row pt-5">
-            <h3 class="text-center pb-3">Saiba um pouco mais sobre cada área.</h3>
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="./assets/image/energia sus (1).png" class="img-card card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Acessibilidade a água</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary">Saiba mais sobre:</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="./assets/image/energia sus.png" class="img-card card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Energia rural</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary">Saiba mais sobre:</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="./assets/image/agro.png" class="img-card card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Produção e industrialização</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary">Saiba mais sobre:</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <audio id="somClick" src="tizatto (online-audio-converter.com).mp3" preload="auto"></audio>
 
-        <div id="carouselExample" class="carousel slide pt-4 pb-3">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="./assets/image/Energy (1).gif" class="img-slide d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="./assets/image/Energy.gif" class=" img-slide d-block w-100" alt="...">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
+  <script>
+    const som = document.getElementById("somClick");
+
+    document.addEventListener("click", () => {
+      som.pause();
+      som.currentTime = 0;
+      som.playbackRate = 2; // <-- aqui aumenta a velocidade
+      som.play().catch((e) => {
+        console.log("Erro ao tocar o som:", e);
+      });
+    });
+  </script>
+
+<section class="container my-5">
+  <div class="row align-items-center mb-4">
+    <!-- Imagem à esquerda -->
+    <div class="col-md-6">
+      <img src="assets/image/campo1.png.jpeg" alt="Imagem do campo" class="img-fluid rounded">
     </div>
-    <div class="footer ">
-        <p>Todos os direitos reservados para agrinho 2025 - Festejando a conexão campo cidade.</p>
+    <!-- Texto à direita -->
+    <div class="col-md-6">
+      <h1>Sobre o Campo</h1>
+
+<p>O campo representa a essência da vida rural, onde a natureza se manifesta em sua forma mais pura e vibrante. É um espaço que sustenta a biodiversidade, abriga culturas tradicionais e mantém viva a conexão do homem com a terra.</p>
+
+<p>Ao longo dos séculos, o campo tem sido palco de histórias, trabalho árduo e inovação. As práticas agrícolas evoluem constantemente, buscando um equilíbrio entre produtividade e sustentabilidade ambiental.</p>
+
+<p>Além disso, o campo é fundamental para a produção de alimentos que abastecem cidades e regiões, sendo um pilar indispensável para a segurança alimentar nacional. Investir no campo é investir no futuro do país.</p>
+
+<p>A valorização do campo também passa pelo reconhecimento da cultura local, preservação dos saberes tradicionais e incentivo às novas gerações para que continuem cultivando essa importante relação entre homem e natureza.</p>
+
+<p>Por tudo isso, é essencial promover políticas públicas e iniciativas privadas que garantam acesso à educação, saúde, tecnologia e infraestrutura no meio rural. Ao fortalecer essas bases, asseguramos que o campo continue sendo um ambiente fértil não apenas para a produção, mas também para o bem-estar e desenvolvimento das comunidades que nele vivem.</p>
+<p>O campo também desempenha um papel crucial na preservação ambiental, sendo guardião de ecossistemas importantes e aliado no enfrentamento das mudanças climáticas. Com práticas conscientes, como a agroecologia e o reflorestamento, é possível proteger os recursos naturais e garantir um futuro mais equilibrado para as próximas gerações.</p>
+
+    </div>
+  </div>
+
+  <div class="row align-items-center">
+    <!-- Texto à esquerda -->
+    <div class="col-md-6 order-md-1 order-2">
+      <h1>Conexão Campo e Cidade</h1>
+
+<p>A conexão entre campo e cidade é vital para o desenvolvimento equilibrado e sustentável das regiões. Essa relação possibilita a troca de recursos, conhecimentos e tecnologias que beneficiam ambas as partes.</p>
+
+<p>Nas cidades, a valorização dos produtos rurais e das manifestações culturais do campo contribui para uma maior integração social e econômica, fortalecendo identidades regionais.</p>
+
+<p>Por outro lado, o campo se beneficia dos avanços urbanos em infraestrutura, educação e saúde, promovendo a melhoria da qualidade de vida no meio rural e estimulando o crescimento econômico.</p>
+
+<p>Essa interdependência reforça a importância de políticas públicas que incentivem a cooperação e o desenvolvimento conjunto, criando pontes que conectem o melhor do campo e da cidade para um futuro mais próspero e justo.</p>
+
+<p>Promover essa conexão também é essencial para enfrentar desafios globais, como a segurança alimentar, as mudanças climáticas e o êxodo rural. A integração efetiva entre campo e cidade fortalece redes de abastecimento, estimula cadeias produtivas sustentáveis e favorece um modelo de desenvolvimento mais resiliente e inclusivo.</p>
+<p>Fortalecer esse elo também desperta uma maior consciência nas populações urbanas sobre a origem dos alimentos e a importância do meio rural, incentivando escolhas mais responsáveis e sustentáveis no dia a dia.</p>
+
+    </div>
+    <!-- Imagem à direita -->
+    <div class="col-md-6 order-md-2 order-1">
+      <img src="assets/image/campo2.png.jpeg" alt="Conexão campo cidade" class="img-fluid rounded">
+    </div>
+  </div>
+</section>
+
+
+<section class="container my-5">
+  <h2 class="text-center mb-4">Informações Importantes</h2>
+  <div class="row g-4">
+    <div class="col-md-6 col-lg-3">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">Sustentabilidade no Campo</h5>
+          <p class="card-text">
+            A agricultura sustentável promove práticas que preservam o solo, a água e a biodiversidade, garantindo recursos para as futuras gerações sem comprometer a produtividade atual.
+          </p>
+          <p class="card-text">
+            Técnicas como rotação de culturas, plantio direto e manejo integrado de pragas são essenciais para esse objetivo.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">Tecnologia Rural</h5>
+          <p class="card-text">
+            A incorporação de tecnologias no campo, como sensores IoT, drones e sistemas de monitoramento, aumenta a eficiência e a precisão na produção agrícola, reduzindo desperdícios e custos.
+          </p>
+          <p class="card-text">
+            Isso possibilita uma agricultura de precisão, mais produtiva e sustentável.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">Valorização Cultural</h5>
+          <p class="card-text">
+            O campo guarda tradições, festas e saberes que fortalecem a identidade das comunidades rurais. Incentivar essa cultura é fundamental para o desenvolvimento social e turístico da região.
+          </p>
+          <p class="card-text">
+            Projetos culturais ajudam a preservar esse patrimônio imaterial.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">Educação no Meio Rural</h5>
+          <p class="card-text">
+            Investir na educação do campo amplia oportunidades e capacita jovens para atuarem em diversas áreas, promovendo o desenvolvimento local e a inovação no setor agrícola.
+          </p>
+          <p class="card-text">
+            A formação técnica e o ensino superior são ferramentas essenciais nesse processo.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="container my-5">
+  <h2 class="text-center mb-4">Tabela Informativa sobre o Campo</h2>
+  <div class="table-responsive">
+    <table class="table table-striped table-bordered align-middle">
+      <thead class="table-primary">
+        <tr>
+          <th scope="col">Aspecto</th>
+          <th scope="col">Descrição</th>
+          <th scope="col">Importância</th>
+          <th scope="col">Exemplo Prático</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Solo</td>
+          <td>Base da produção agrícola, composto por minerais, matéria orgânica, água e ar.</td>
+          <td>Fundamental para o cultivo e sustentação das plantas.</td>
+          <td>Uso de técnicas de conservação para evitar erosão e perda de nutrientes.</td>
+        </tr>
+        <tr>
+          <td>Água</td>
+          <td>Recurso essencial para irrigação, consumo animal e processos agrícolas.</td>
+          <td>Garantir o abastecimento sustentável é vital para a produtividade.</td>
+          <td>Captação de água da chuva e sistemas de irrigação eficientes.</td>
+        </tr>
+        <tr>
+          <td>Biodiversidade</td>
+          <td>Variedade de organismos vivos que interagem no ecossistema rural.</td>
+          <td>Ajuda no controle natural de pragas e manutenção do equilíbrio ambiental.</td>
+          <td>Plantio de árvores nativas e manutenção de áreas de preservação.</td>
+        </tr>
+        <tr>
+          <td>Tecnologia</td>
+          <td>Ferramentas e sistemas que aumentam a eficiência e sustentabilidade.</td>
+          <td>Facilita a agricultura de precisão e reduz impactos ambientais.</td>
+          <td>Uso de drones para monitoramento e sensores de umidade no solo.</td>
+        </tr>
+        <tr>
+          <td>Cultura Rural</td>
+          <td>Tradições, festas e saberes locais que fortalecem as comunidades.</td>
+          <td>Preserva a identidade e atrai turismo cultural.</td>
+          <td>Festas típicas e incentivo a artesanato local.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="container my-5">
+  <h2 class="mb-4">A Importância do Campo para o Futuro Sustentável</h2>
+  <p>
+    O campo é muito mais do que um espaço geográfico destinado à agricultura e à criação de animais; ele representa a base da nossa existência e o alicerce para um futuro sustentável. Em um mundo cada vez mais urbanizado, é fundamental resgatar e valorizar a conexão entre as áreas rurais e urbanas, reconhecendo o papel essencial que o campo desempenha na produção de alimentos, na preservação ambiental e na manutenção dos ciclos naturais.
+  </p>
+  <p>
+    Além da função produtiva, o campo abriga uma riqueza cultural imensurável, fruto de tradições, saberes e práticas que foram transmitidos por gerações. Essas raízes culturais fortalecem a identidade das comunidades rurais e promovem um senso de pertencimento que se reflete em um cuidado maior com o território e seus recursos naturais.
+  </p>
+  <p>
+    O desafio contemporâneo consiste em aliar o avanço tecnológico à preservação ambiental, garantindo que as novas gerações possam desfrutar de um meio ambiente equilibrado e próspero. Para isso, é necessário investir em práticas agrícolas sustentáveis, inovação e educação, além de políticas públicas que incentivem a integração entre campo e cidade, fomentando o desenvolvimento social e econômico de forma justa e inclusiva.
+  </p>
+  <p>
+    Valorizar o campo é, portanto, investir na saúde do planeta, na segurança alimentar e na qualidade de vida de todos. É reconhecer que o futuro depende do equilíbrio harmonioso entre o homem, a natureza e as cidades, construindo uma ponte sólida que conecte passado, presente e futuro.
+  </p>
+</section>
+
+<section class="container my-5">
+  <div id="agrinhoCarousel" class="carousel slide" data-bs-ride="carousel">
+    <!-- Indicadores -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#agrinhoCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#agrinhoCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#agrinhoCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
-        crossorigin="anonymous"></script>
+    <!-- Slides -->
+    <div class="carousel-inner rounded">
+      <div class="carousel-item active">
+        <img src="imagem1.jpg" class="d-block w-100" alt="Imagem 1 do campo">
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+          <h5>Vida no Campo</h5>
+          <p>Conexão com a natureza e valorização das tradições rurais.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="imagem2.jpg" class="d-block w-100" alt="Imagem 2 da agricultura">
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+          <h5>Agricultura Sustentável</h5>
+          <p>Práticas modernas para preservar o meio ambiente.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="imagem3.jpg" class="d-block w-100" alt="Imagem 3 da conexão campo cidade">
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+          <h5>Conexão Campo e Cidade</h5>
+          <p>Integração que promove desenvolvimento e bem-estar.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Controles -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#agrinhoCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#agrinhoCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Próximo</span>
+    </button>
+  </div>
+</section>
+
+<div style="text-align: center; background-color: white; color: black; padding: 20px; font-family: Arial, sans-serif;">
+  <p><strong>Sobre o Campo</strong><br>
+  Fonte: Instituto Nacional de Colonização e Reforma Agrária (INCRA)<br>
+  <a href="https://www.gov.br/incra/pt-br" target="_blank" style="color: purple; text-decoration: none;">
+    https://www.gov.br/incra/pt-br
+  </a></p>
+</div>
+
+    <footer class="footer bg-primary text-white text-center py-3">
+    <p>Todos os direitos reservados para agrinho 2025 - Festejando a conexão campo cidade.</p>
+</footer>
+    
 </body>
-
-</html>
